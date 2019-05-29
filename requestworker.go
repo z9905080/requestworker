@@ -52,7 +52,7 @@ func New(threads int) *Worker {
 		// 	KeepAlive: 10 * time.Second,
 		// 	DualStack: true,
 		// }).DialContext,
-		IdleConnTimeout: 10 * time.Second,
+		IdleConnTimeout: 300 * time.Second,
 		// TLSHandshakeTimeout: 10 * time.Second,
 	}
 	client := &http.Client{
